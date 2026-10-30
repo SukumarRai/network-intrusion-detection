@@ -1,0 +1,22 @@
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+catboost_info/
+
+# Datasets & Large files (ignore raw datasets, keep final submissions)
+train.csv
+test.csv
+*.db
+*.db-journal
+
+# Virtual environments
+.env
+venv/
+ENV/
+env/
+
+# OS / IDE metadata
+.DS_Store
+.vscode/
+.idea/

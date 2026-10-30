@@ -1,0 +1,6 @@
+numpy>=1.22.0
+pandas>=1.4.0
+scikit-learn>=1.0.0
+lightgbm>=3.3.0
+xgboost>=1.6.0
+catboost>=1.0.0
