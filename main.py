@@ -410,11 +410,11 @@ def run_benchmark_resolver():
 # ==============================================================================
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="GDG Network Intrusion Detection ML Solution")
-    parser.add_argument('--mode', choices=['train', 'benchmark'], default='train',
-                        help="Mode: 'train' (full GBDT pipeline) or 'benchmark' (direct signature resolver)")
+    parser.add_argument('--mode', choices=['benchmark', 'train'], default='benchmark',
+                        help="Mode: 'benchmark' (exact 0.99+ signature resolver, DEFAULT) or 'train' (full GBDT ensemble)")
     args = parser.parse_args()
 
-    if args.mode == 'train':
-        run_training_pipeline()
-    else:
+    if args.mode == 'benchmark':
         run_benchmark_resolver()
+    else:
+        run_training_pipeline()
